@@ -10,13 +10,13 @@ Band({ // Constructors
   this.votes = 0
 });
 
-factory Band.fromMap (Map<String,dynamic> obj) { // propio de dart
+factory Band.fromMap (Map<dynamic,dynamic> obj) =>  // propio de dart
   Band(
     id: obj['id'],
     name: obj['name'],
     votes: obj['votes']
   );
-} 
+
 
 
 
